@@ -23,7 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${appFont.className} bg-slate-50 antialiased`}>
+      <body
+        className={`${appFont.className} bg-slate-50 font-mono antialiased`}
+      >
         <ThemeContextProvider>
           {children}
           <ThemeSwitchButton />
