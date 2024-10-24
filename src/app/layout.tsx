@@ -1,8 +1,9 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
-
 import { Inter } from "next/font/google";
+
+import ThemeContextProvider from "@/context/theme-context";
 
 const appFont = Inter({
   subsets: ["latin"],
@@ -22,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${appFont.className} bg-slate-50 antialiased`}>
-        {children}
+        <ThemeContextProvider>{children}</ThemeContextProvider>
       </body>
     </html>
   );
