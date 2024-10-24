@@ -1,7 +1,23 @@
-import { MdOutlineWbSunny } from "react-icons/md";
+"use client";
 
-export const ThemeSwitchButton = () => (
-  <span className="fixed bottom-6 right-6 z-[999] size-12">
-    <MdOutlineWbSunny />
-  </span>
-);
+import { MdOutlineWbSunny } from "react-icons/md";
+import { FiMoon } from "react-icons/fi";
+
+import { useTheme } from "@/context/theme-context";
+
+export const ThemeSwitchButton = () => {
+  const { theme, toggleTheme } = useTheme();
+
+  return (
+    <span
+      className="fixed right-6 top-6 z-[999] flex size-12 cursor-pointer items-center justify-center rounded-full bg-white shadow sm:right-10 sm:top-10 sm:size-14 dark:bg-black dark:text-white"
+      onClick={toggleTheme}
+    >
+      {theme === "light" ? (
+        <MdOutlineWbSunny className="size-5" />
+      ) : (
+        <FiMoon className="size-5" />
+      )}
+    </span>
+  );
+};
