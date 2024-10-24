@@ -1,20 +1,20 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export const Calculator = () => (
-  <div className="rounded-md bg-white px-6 py-4 shadow-sm">
+  <div className="rounded-md bg-white p-6 shadow-sm">
     <Tabs defaultValue="account" className="w-full">
-      <TabsList>
-        <TabsTrigger value="account" className="uppercase">
+      <TabsList className="w-full">
+        <TabsTrigger value="forex" className="flex-1 uppercase">
           Forex
         </TabsTrigger>
-        <TabsTrigger value="password" className="uppercase">
+        <TabsTrigger value="crypto" className="flex-1 uppercase">
           Crypto
         </TabsTrigger>
       </TabsList>
-      <TabsContent value="account">
+      <TabsContent value="forex">
         Make changes to your account here.
       </TabsContent>
-      <TabsContent value="password">Change your password here.</TabsContent>
+      <TabsContent value="crypto">Change your password here.</TabsContent>
     </Tabs>
   </div>
 );
