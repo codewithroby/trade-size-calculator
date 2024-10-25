@@ -6,7 +6,9 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function calculateSize(inputs: TradeInputElements) {
-  const { capitalToRisk, entryPrice, stopLossPrice } = inputs;
+  const capitalToRisk = Number(inputs.capitalToRisk);
+  const entryPrice = Number(inputs.entryPrice);
+  const stopLossPrice = Number(inputs.stopLossPrice);
 
   if (
     capitalToRisk > 0 &&
