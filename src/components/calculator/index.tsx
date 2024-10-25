@@ -15,14 +15,12 @@ export const Calculator = () => (
           </TabsTrigger>
         </TabsList>
       </div>
-      <div className="p-6">
-        <TabsContent value="forex" className="mt-0 pt-0">
-          <Forex />
-        </TabsContent>
-        <TabsContent value="crypto" className="mt-0 pt-0">
-          <Crypto />
-        </TabsContent>
-      </div>
+      <TabsContent value="forex" className="mt-0 pt-0">
+        <Forex />
+      </TabsContent>
+      <TabsContent value="crypto" className="mt-0 pt-0">
+        <Crypto />
+      </TabsContent>
     </Tabs>
   </div>
 );
