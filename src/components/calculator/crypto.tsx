@@ -98,7 +98,7 @@ export const Crypto = () => {
         </div>
       </div>
       <LotSize
-        value={Math.abs(Number(inputList.positionSize) / 100000)
+        value={Math.abs(Number(inputList.positionSize))
           .toFixed(2)
           .replace(/.00$/, "")}
         key="CryptoPositionSize"
