@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 
 import ThemeContextProvider from "@/context/theme-context";
 import { ThemeSwitchButton } from "@/components/theme-switch-button";
+import { Toaster } from "@/components/ui/toaster";
 
 const appFont = Inter({
   subsets: ["latin"],
@@ -35,6 +36,7 @@ export default function RootLayout({
           {children}
           <ThemeSwitchButton />
         </ThemeContextProvider>
+        <Toaster />
       </body>
     </html>
   );
