@@ -7,7 +7,7 @@ import { ChangeEvent, useState } from "react";
 import { FaDollarSign } from "react-icons/fa6";
 import { LotSize } from "@/components/calculator/lot-size";
 
-export const Forex = () => {
+export const Crypto = () => {
   const [inputList, setInputList] = useState<TradeInputElements>({
     capitalToRisk: 0,
     entryPrice: "1.00000",
