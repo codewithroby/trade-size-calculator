@@ -10,8 +10,8 @@ import { LotSize } from "@/components/calculator/lot-size";
 export const Crypto = () => {
   const [inputList, setInputList] = useState<TradeInputElements>({
     capitalToRisk: 0,
-    entryPrice: "1.00000",
-    stopLossPrice: "1.00001",
+    entryPrice: 0,
+    stopLossPrice: 0,
     positionSize: 0,
   });
 

@@ -29,7 +29,12 @@ export const LotSize = ({
           readOnly
         />
         <div className="absolute right-0 top-0 flex h-full items-center justify-center p-2">
-          <Button className="flex size-full items-center justify-center p-2">
+          <Button
+            className="flex size-full items-center justify-center p-2"
+            onClick={() => {
+              navigator.clipboard.writeText(value.toString());
+            }}
+          >
             <span className="text-xs font-bold uppercase">
               Copy {forex ? "Lot" : "Position"} Size
             </span>
