@@ -8,7 +8,7 @@ export const LotSize = ({
   forex = false,
 }: {
   value: TradeInputElements["positionSize"];
-  forex: boolean;
+  forex?: boolean;
 }) => (
   <div className="flex flex-col space-y-3 p-6">
     <div className="flex flex-col space-y-1">
@@ -20,17 +20,20 @@ export const LotSize = ({
       </Label>
       <div className="relative">
         <Input
-          name="entryPrice"
-          id="entryPrice"
+          name="capitalToRisk"
+          id="capitalToRisk"
           placeholder="0"
           value={value}
           type="number"
-          className="pl-[1.55rem] sm:text-base"
+          className="sm:text-base"
+          readOnly
         />
         <div className="absolute right-0 top-0 flex h-full items-center justify-center p-2">
-          <Button className="flex size-full items-center justify-center space-x-2 px-1 pt-px">
-            <span className="text-xs uppercase">Copy</span>
-            <BiCopy className="size-4 sm:size-3.5" />
+          <Button className="flex size-full items-center justify-center p-2">
+            <span className="text-xs font-bold uppercase">
+              Copy {forex ? "Lot" : "Position"} Size
+            </span>
+            <BiCopy className="size-3 sm:size-1" />
           </Button>
         </div>
       </div>

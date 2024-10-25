@@ -101,8 +101,7 @@ export const Crypto = () => {
         value={Math.abs(Number(inputList.positionSize) / 100000)
           .toFixed(2)
           .replace(/.00$/, "")}
-        forex
-        key="ForexLotSize"
+        key="CryptoPositionSize"
       />
     </>
   );
