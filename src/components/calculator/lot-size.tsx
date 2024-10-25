@@ -46,6 +46,7 @@ export const LotSize = ({
                     toast({
                       title: "Success",
                       description: `Trade ${forex ? "lot" : "position"} size has been copied to clipboard.`,
+                      duration: 1500,
                     });
                     confetti();
                   });
