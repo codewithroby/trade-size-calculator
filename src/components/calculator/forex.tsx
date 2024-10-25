@@ -62,7 +62,7 @@ export const Forex = () => {
               <Input
                 name="entryPrice"
                 id="entryPrice"
-                placeholder="0"
+                placeholder="1.00000"
                 value={inputList.entryPrice}
                 type="number"
                 onChange={handleInputUpdate}
@@ -84,7 +84,7 @@ export const Forex = () => {
               <Input
                 name="stopLossPrice"
                 id="stopLossPrice"
-                placeholder="0"
+                placeholder="1.00001"
                 value={inputList.stopLossPrice}
                 type="number"
                 onChange={handleInputUpdate}

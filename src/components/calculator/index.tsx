@@ -7,10 +7,16 @@ export const Calculator = () => (
     <Tabs defaultValue="forex" className="relative w-full">
       <div className="border-b border-slate-100 p-6">
         <TabsList className="w-full">
-          <TabsTrigger value="forex" className="flex-1 uppercase">
+          <TabsTrigger
+            value="forex"
+            className="flex-1 font-black uppercase data-[state=active]:bg-[#006AFF] data-[state=active]:text-white"
+          >
             Forex
           </TabsTrigger>
-          <TabsTrigger value="crypto" className="flex-1 uppercase">
+          <TabsTrigger
+            value="crypto"
+            className="flex-1 font-black uppercase data-[state=active]:bg-[#FFD700] data-[state=active]:text-[#212121]"
+          >
             Crypto
           </TabsTrigger>
         </TabsList>

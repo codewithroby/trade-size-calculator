@@ -33,7 +33,7 @@ export const LotSize = ({
             placeholder="0"
             value={value}
             type="number"
-            className="sm:text-base"
+            className="font-bold sm:text-base"
             readOnly
           />
           <div className="absolute right-0 top-0 flex h-full items-center justify-center p-2">
