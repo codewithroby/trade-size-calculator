@@ -1,6 +1,6 @@
 import "./globals.css";
 
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 
 import ThemeContextProvider from "@/context/theme-context";
@@ -14,6 +14,11 @@ export const metadata: Metadata = {
   title: "Trade Size Calculator",
   description:
     "Calculate your trade size seamlessly with this free calculator.",
+};
+
+export const viewport: Viewport = {
+  userScalable: false,
+  initialScale: 1,
 };
 
 export default function RootLayout({
