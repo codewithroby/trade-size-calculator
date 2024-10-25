@@ -1,5 +1,5 @@
 interface TradeInputElements {
-  capitalToRisk: number | string;
-  entryPrice: number | string;
-  stopLossPrice: number | string;
+  capitalToRisk: number;
+  entryPrice: number;
+  stopLossPrice: number;
 }
